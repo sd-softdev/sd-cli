@@ -1,8 +1,11 @@
+#!/usr/bin/env node
 const commander = require('commander');
 const program = new commander.Command();
 var fs = require('fs');
+const path = require('path')
 
 program.version('0.0.1');
+// program.version(require('../package.json').version);
 program.option('-a, --add [featureName]', 'add new feature');
 
 program.parse(process.argv);
@@ -27,7 +30,7 @@ function createNewFolder(dirName) {
 }
 
 function createCore(name, type) {
-    const src = './templates/' + type + '.tmplt';
+    const src = path.join(__dirname, 'templates/' + type + '.tmplt');
     const dst = './' + name + '/' + name + '.' + type + '.ts';    
     const oldContent = fs.readFileSync(src, 'ascii');
 
