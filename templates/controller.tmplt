@@ -1,0 +1,11 @@
+import { Controller } from '@nestjs/common';
+import { BaseController } from 'sd-nest-base';
+import { [<Feature>]Service } from './[<feature>].service';
+import { [<Feature>] } from './[<feature>].entity';
+
+@Controller('blume')
+export class [<Feature>]Controller extends BaseController<[<Feature>]> {
+    constructor(public readonly service: [<Feature>]Service) {
+        super();
+    }
+}

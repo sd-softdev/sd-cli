@@ -1,0 +1,29 @@
+{
+  "name": "sd-cli",
+  "version": "0.0.1",
+  "description": "A simple cli to using all sd npm packages",
+  "main": "index.js",
+  "bin": {
+    "sd": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sd-softdev/sd-cli.git"
+  },
+  "keywords": [
+    "sd",
+    "sd-cli"
+  ],
+  "author": "SD-SoftDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sd-softdev/sd-cli/issues"
+  },
+  "homepage": "https://github.com/sd-softdev/sd-cli#readme",
+  "dependencies": {
+    "commander": "^3.0.0"
+  }
+}

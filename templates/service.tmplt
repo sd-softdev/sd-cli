@@ -1,0 +1,15 @@
+import { Injectable } from '@nestjs/common';
+import { BaseService } from 'sd-nest-base';
+import { [<Feature>] } from './[<feature>].entity';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+
+@Injectable()
+export class [<Feature>]Service extends BaseService<[<Feature>]> {
+    constructor(
+        @InjectRepository([<Feature>])
+        private readonly fRepo: Repository<[<Feature>]>,
+    ) {
+        super(fRepo);
+    }
+}

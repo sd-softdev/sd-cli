@@ -1,0 +1,6 @@
+import { Base } from 'sd-nest-base';
+import { Entity, Column } from 'typeorm';
+
+@Entity()
+export class [<Feature>] extends Base {
+}
