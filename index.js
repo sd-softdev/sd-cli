@@ -25,13 +25,13 @@ if (program.add) {
 
 function createNewFolder(dirName) {
     if (!fs.existsSync(dirName)) {
-        fs.mkdirSync(dirName)
+        fs.mkdirSync(dirName.toLowerCase())
     }
 }
 
 function createCore(name, type) {
     const src = path.join(__dirname, 'templates/' + type + '.tmplt');
-    const dst = './' + name + '/' + name + '.' + type + '.ts';    
+    const dst = './' + name.toLowerCase() + '/' + name.toLowerCase() + '.' + type + '.ts';    
     const oldContent = fs.readFileSync(src, 'ascii');
 
     console.log('Create', type, 'in', dst);

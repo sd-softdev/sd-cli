@@ -3,7 +3,7 @@ import { BaseController } from 'sd-nest-base';
 import { [<Feature>]Service } from './[<feature>].service';
 import { [<Feature>] } from './[<feature>].entity';
 
-@Controller('blume')
+@Controller('[<feature>]')
 export class [<Feature>]Controller extends BaseController<[<Feature>]> {
     constructor(public readonly service: [<Feature>]Service) {
         super();

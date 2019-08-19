@@ -1,6 +1,6 @@
 {
   "name": "sd-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple cli to using all sd npm packages",
   "main": "index.js",
   "bin": {
