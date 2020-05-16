@@ -1,13 +1,9 @@
 # sd-cli
+A simple cli to using all sd npm packages
 
-## Installation
+## overview
+```$ sd -h```
 
-```
-$ npm install -g sd-nest-cli
-```
+## add new feature
+```$ sd -a <new-feature>```
 
-
-## Example
-```
-$ sd -a Book
-```
