@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { BaseService } from 'sd-nest-base';
-import { [<Feature>] } from './[<feature>].entity';
+import { [<Feature>] } from './[<featureFileName>].entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 

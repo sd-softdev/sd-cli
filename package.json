@@ -1,6 +1,6 @@
 {
-  "name": "sd-cli",
-  "version": "0.0.2",
+  "name": "sd-nest-cli",
+  "version": "0.1.0",
   "description": "A simple cli to using all sd npm packages",
   "main": "index.js",
   "bin": {
@@ -15,7 +15,8 @@
   },
   "keywords": [
     "sd",
-    "sd-cli"
+    "sd-cli",
+    "sd-nest-cli"
   ],
   "author": "SD-SoftDev",
   "license": "MIT",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/sd-softdev/sd-cli#readme",
   "dependencies": {
+    "ansi-escapes": "^4.3.1",
     "commander": "^3.0.0"
   }
 }
